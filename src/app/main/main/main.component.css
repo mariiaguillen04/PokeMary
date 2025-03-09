@@ -1,0 +1,62 @@
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px; 
+    padding: 20px;
+
+  }
+  
+
+  .tarjeta {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+    height: 250px; 
+  }
+  
+  .tarjeta:hover {
+    transform: translateY(-5px);
+    transform: scale(1.05);
+  }
+
+  .tarjeta img {
+    width: 100px;
+    height: 100px;
+  }
+  
+ 
+  .botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .botones button {
+    background-color: #0075BE;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    font-size: 10px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    transition: background-color 0.2s;
+    font-family: 'Press Start 2P';
+  }
+  
+  .botones button:hover {
+    background-color: #C62828;
+    transform: translateY(-5px);
+    color: white;
+  }
+  
+  .botones button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+  }
+  

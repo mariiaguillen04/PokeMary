@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="tarjeta" *ngFor="let pokemon of pokemons">
+    <img [src]="pokemon.image" alt="{{ pokemon.name }}" />
+    <p>Nº: {{ pokemon.id }}</p>
+    <p>{{ pokemon.name }}</p>
+  </div>
+</div>
+
+<div class="botones">
+  <button (click)="changePage(false)" [disabled]="currentPage === 0">Anterior</button>
+  <button (click)="changePage(true)">Siguiente</button>
+</div>

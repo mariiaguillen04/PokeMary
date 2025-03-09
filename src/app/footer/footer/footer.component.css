@@ -1,0 +1,51 @@
+
+footer {
+    background: linear-gradient(90deg, #C62828, #D32F2F); 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer h2, footer h3 {
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+}
+
+#desarrolladora, #proyecto, #feedback {
+    width: 30%;
+    min-width: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#desarrolladora p, #proyecto p {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+#desarrolladora p{
+    text-align: left;
+}
+
+#feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
