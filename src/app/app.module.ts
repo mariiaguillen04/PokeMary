@@ -8,6 +8,7 @@ import { MainComponent } from './main/main/main.component';
 import { HeaderComponent } from './header/header/header.component';
 import { FooterComponent } from './footer/footer/footer.component';
 import { DescripcionComponent } from './descripcion/descripcion/descripcion.component';
+import { BuscadorComponent } from './buscador/buscador/buscador.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DescripcionComponent } from './descripcion/descripcion/descripcion.comp
     MainComponent,
     HeaderComponent,
     FooterComponent,
-    DescripcionComponent
+    DescripcionComponent,
+    BuscadorComponent
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,10 @@
 
   }
   
-
+a{
+  text-decoration: none;
+  color: black;
+}
   .tarjeta {
     background-color: #f8f9fa;
     border-radius: 10px;
@@ -21,8 +24,9 @@
   .tarjeta:hover {
     transform: translateY(-5px);
     transform: scale(1.05);
+    cursor:pointer;
   }
-
+ 
   .tarjeta img {
     width: 100px;
     height: 100px;
