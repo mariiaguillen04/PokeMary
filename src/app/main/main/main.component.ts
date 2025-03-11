@@ -23,9 +23,19 @@ export class MainComponent implements OnInit {
 
   getPokemonsFromService(): void {
     this.pokemonService.getPokemons(this.paginaActual * this.pageSize, this.pageSize).subscribe(data => {
-      this.pokemons = data.results.map((pokemon: Pokemon) => new Pokemon(pokemon.name, pokemon.url, pokemon.height,pokemon.weight));
+      this.pokemons = data.results.map((result: any) => {
+        const { name, url } = result;
+        const height = result.height || 0;
+        const weight = result.weight || 0;
+        const abilities = result.abilities || [];
+        const types = result.types || [];
+        const stats = result.stats || [];
+  
+        return new Pokemon(name, url, height, weight, abilities, types, stats);
+      });
     });
   }
+  
 
   cambiarPagina(next: boolean): void {
     this.paginaActual = next ? this.paginaActual + 1 : this.paginaActual - 1;

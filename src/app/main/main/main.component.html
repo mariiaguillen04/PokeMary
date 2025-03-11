@@ -2,7 +2,7 @@
 <div class="container">
   <div class="tarjeta" *ngFor="let pokemon of pokemons">
     <a [routerLink]="['/descripcion', pokemon.id]">
-      <img [src]="pokemon.image" alt="{{ pokemon.name }}" />
+      <img [src]="pokemon.gift" alt="{{ pokemon.name }}" />
       <p>Nº: {{ pokemon.id }}</p>
       <p>{{ pokemon.name }}</p>
     </a>
