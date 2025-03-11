@@ -1,7 +1,7 @@
 <div class="container">
   <div *ngIf="pokemon" class="pokemon-card" [ngStyle]="{'--bg-color': getBackgroundColor(pokemon.types[0].type.name)}">
     <div class="pokemon-thumbnail">
-      <img [src]="gift" alt="{{ pokemon.name }}">
+      <img [src]="gift" alt="{{ pokemon.name }}" loading="lazy">
       <span>Nº {{ pokemon.id }} {{ pokemon.name }}</span>
     </div>
     <div class="pokemon-image-container">
