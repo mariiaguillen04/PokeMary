@@ -1,27 +1,43 @@
 <div class="container">
+
   <div *ngIf="pokemon" class="pokemon-card" [ngStyle]="{'--bg-color': getBackgroundColor(pokemon.types[0].type.name)}">
-    <div class="pokemon-thumbnail">
-      <img [src]="gift" alt="{{ pokemon.name }}" loading="lazy">
-      <span>Nº {{ pokemon.id }} {{ pokemon.name }}</span>
-    </div>
-    <div class="pokemon-image-container">
-      <div class="pokemon-image">
-        <img [src]="img" alt="{{ pokemon.name }}">
-      </div>
-    </div>
-    <div class="details">
-      <p><strong>Tipo:</strong> <span *ngFor="let type of pokemon.types">{{ type.type.name }}</span></p>
-      <p><strong>Peso:</strong> {{ pokemon.weight / 10 }} kg</p>
-      <p><strong>Altura:</strong> {{ pokemon.height / 10 }} m</p>
-      <div class="abilities">
-        <p><strong>Habilidades:</strong> <span *ngFor="let ability of pokemon.abilities">{{ ability.ability.name }}</span></p>
-      </div>
-      <div class="stats">
-        <p><strong>Estadísticas:</strong></p>
-        <ul>
-          <li *ngFor="let stat of pokemon.stats">{{ stat.stat.name }}: {{ stat.base_stat }}</li>
-        </ul>
-      </div>
-    </div>
+    
+    <header class="pokemon-header">
+      <img [src]="gift" alt="{{ pokemon.name }}" loading="lazy" class="pokemon-thumbnail">
+      <h2 class="pokemon-title">Nº {{ pokemon.id }} - {{ pokemon.name }}</h2>
+    </header>
+
+    <main class="pokemon-main">
+
+      <section class="pokemon-visuals">
+        <figure class="pokemon-image">
+          <img [src]="img" alt="{{ pokemon.name }}">
+        </figure>
+      </section>
+
+      <section class="pokemon-info">
+
+        <article class="pokemon-type">
+          <p><strong>Tipo: </strong> <span *ngFor="let type of pokemon.types">{{ type.type.name }}</span></p>
+        </article>
+
+        <article class="basicos">
+          <p><strong>Peso:</strong> {{ pokemon.weight / 10 }} kg</p>
+          <p><strong>Altura:</strong> {{ pokemon.height / 10 }} m</p>
+        </article>
+
+        <article class="habilidades">
+          <p><strong>Habilidades: </strong> <span *ngFor="let ability of pokemon.abilities">{{ ability.ability.name }}</span></p>
+        </article>
+
+        <article class="estadisticas">
+          <p><strong>Estadísticas:</strong></p><br>
+          <ul>
+            <li *ngFor="let stat of pokemon.stats">{{ stat.stat.name }}: {{ stat.base_stat }}</li>
+          </ul>
+        </article>
+
+      </section>
+    </main>
   </div>
 </div>

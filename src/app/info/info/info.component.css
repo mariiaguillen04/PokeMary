@@ -15,17 +15,22 @@
 
 h3 {
     font-family: 'Press Start 2P', cursive;
+    text-align: center;
 }
 
 #desarrolladora p, #proyecto p, #feedback p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
 }
 
+#feedback p {
+    text-align: justify;
+}
 #desarrolladora p {
     margin: 0 auto;
 }
-
+#proyecto p{
+    align-items: center;
+}
 div {
     display: flex;
     justify-content: space-between;
