@@ -1,59 +1,109 @@
-# PokeMary
+PokeMary
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
+PokeMary es una aplicación web basada en Angular que consume la API de Pokémon para permitir a los usuarios buscar y acceder a los detalles de cada Pokémon. Este proyecto fue generado utilizando Angular CLI versión 19.1.8.
 
-## Development server
+Características
+Buscar Pokémon por nombre o ID
 
-To start a local development server, run:
+Visualizar detalles de cada Pokémon, incluyendo habilidades, tipos y estadísticas
 
-```bash
+Navegación fluida entre diferentes secciones de la aplicación
+
+Diseño responsivo y atractivo visualmente
+
+Tabla de Contenidos
+PokeMary
+
+Características
+
+Requisitos Previos
+
+Instalación
+
+Servidor de Desarrollo
+
+Generación de Código
+
+Construcción
+
+Ejecución de Pruebas Unitarias
+
+Ejecución de Pruebas End-to-End
+
+Recursos Adicionales
+
+Autor
+
+Licencia
+
+Requisitos Previos
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
+
+Node.js y npm (Node Package Manager)
+
+Angular CLI
+
+Instalación
+Sigue estos pasos para configurar y ejecutar el proyecto localmente:
+
+Clona el repositorio:
+
+bash
+git clone https://github.com/tu_usuario/PokeMary.git
+Navega al directorio del proyecto:
+
+bash
+cd PokeMary
+Instala las dependencias:
+
+bash
+npm install
+Servidor de Desarrollo
+Para iniciar un servidor de desarrollo local, ejecuta:
+
+bash
 ng serve
-```
+Una vez que el servidor esté en funcionamiento, abre tu navegador y navega a http://localhost:4200/. La aplicación se recargará automáticamente cada vez que modifiques alguno de los archivos fuente.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Generación de Código
+Angular CLI incluye herramientas de generación de código muy potentes. Para generar un nuevo componente, ejecuta:
 
-## Code scaffolding
+bash
+ng generate component nombre-del-componente
+Para obtener una lista completa de esquemas disponibles (como components, directives, o pipes), ejecuta:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
+bash
 ng generate --help
-```
+Construcción
+Para compilar el proyecto, ejecuta:
 
-## Building
-
-To build the project run:
-
-```bash
+bash
 ng build
-```
+Esto compilará tu proyecto y almacenará los artefactos de construcción en el directorio dist/. Por defecto, la compilación en producción optimiza tu aplicación para rendimiento y velocidad.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Ejecución de Pruebas Unitarias
+Para ejecutar pruebas unitarias con el Karma, utiliza el siguiente comando:
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
+bash
 ng test
-```
+Ejecución de Pruebas End-to-End
+Para pruebas end-to-end (e2e), ejecuta:
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
+bash
 ng e2e
-```
+Angular CLI no incluye un marco de pruebas end-to-end por defecto. Puedes elegir uno que se adapte a tus necesidades.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Recursos Adicionales
+Para obtener más información sobre el uso de Angular CLI, incluyendo referencias detalladas de comandos, visita la Guía y Referencia de Comandos de Angular CLI.
 
-## Additional Resources
+Autor
+María Guillén Mateos - Desarrolladora
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Email: mariaguillen@gmail.com
+
+GitHub: mariiaguillen04
+
+Licencia
+Este proyecto está licenciado bajo la Licencia MIT - consulta el archivo LICENSE.md para más detalles.
+
+¡Espero que disfrutes explorando PokeMary tanto como yo disfruté desarrollándola! Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto.
