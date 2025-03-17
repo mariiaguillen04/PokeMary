@@ -1,11 +1,11 @@
 export class Pokemon {
   id: number;
   name: string; 
-  url: string; // URL del recurso del Pokémon
-  image: string; // URL de la imagen del Pokémon
-  abilities: { // Habilidades del Pokémon
+  url: string;
+  image: string;
+  abilities: { 
     ability: {
-      name: string; // Nombre de la habilidad
+      name: string; 
     };
   }[];
   types: { // Tipos del Pokémon
@@ -13,15 +13,15 @@ export class Pokemon {
       name: string; // Nombre del tipo
     };
   }[];
-  stats: { // Estadísticas del Pokémon
-    base_stat: number; // Valor base de la estadística
+  stats: { 
+    base_stat: number; 
     stat: {
-      name: string; // Nombre de la estadística
+      name: string;
     };
   }[];
-  height: number; // Altura del Pokémon
-  weight: number; // Peso del Pokémon
-  gift: string; // URL del GIF animado del Pokémon
+  height: number; 
+  weight: number;
+  gift: string;
 
   constructor(name: string, url: string, height: number, weight: number, abilities: { ability: { name: string; } }[], types: { type: { name: string; } }[], stats: { base_stat: number; stat: { name: string; } }[]) {
     this.name = name; 
