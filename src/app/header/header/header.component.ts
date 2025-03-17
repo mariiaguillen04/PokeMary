@@ -9,18 +9,17 @@ import { PokemonService } from '../../services/pokemon.service';
   styleUrls: ['./header.component.css'] 
 })
 export class HeaderComponent {
-  busqueda: string = '';
 
-  constructor(private pokemonService: PokemonService) { }
+  constructor(private pokemonService: PokemonService) {}
 
-  buscarPokemon(): void {
-    if (this.busqueda.trim()) {
-      this.pokemonService.getPokemonByName(this.busqueda.trim().toLowerCase()).subscribe(
+  buscarPokemon(termino: string): void {
+    if (termino.trim()) {
+      this.pokemonService.getPokemonByName(termino.trim().toLowerCase()).subscribe(
         (pokemon: Pokemon) => {
-          console.log(pokemon); 
+          console.log('Pokémon encontrado:', pokemon);
         },
         error => {
-          console.error('Pokémon no encontrado', error);
+          console.error('Pokémon no encontrado:', error);
         }
       );
     }

@@ -22,13 +22,17 @@
         </article>
 
         <article class="basicos">
-          <p><strong>Peso:</strong> {{ pokemon.weight / 10 }} kg</p>
+          <p style="margin-right: 20px;"><strong>Peso:</strong > {{ pokemon.weight / 10 }} kg</p>
           <p><strong>Altura:</strong> {{ pokemon.height / 10 }} m</p>
         </article>
 
         <article class="habilidades">
-          <p><strong>Habilidades: </strong> <span *ngFor="let ability of pokemon.abilities">{{ ability.ability.name }}</span></p>
-        </article>
+          <p><strong>Habilidades:</strong> 
+            <span *ngFor="let ability of pokemon.abilities; let i = index">
+              {{ ability.ability.name }}<span *ngIf="i < pokemon.abilities.length - 1">, </span>
+            </span>
+          </p>
+        </article>        
 
         <article class="estadisticas">
           <p><strong>Estadísticas:</strong></p><br>

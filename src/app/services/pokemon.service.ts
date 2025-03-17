@@ -24,10 +24,9 @@ export class PokemonService {
   }
 
   getPokemonByName(name: string): Observable<Pokemon> {
-    // Método para obtener un Pokémon por nombre
-    return this.http.get<Pokemon>(`${this.baseUrl}/pokemon/${name}`);
-    // Realiza una solicitud HTTP GET a la URL del API con el nombre del Pokémon y retorna un Observable con el resultado
+    return this.http.get<Pokemon>(`https://pokeapi.co/api/v2/pokemon/${name}`);
   }
+  
 
   getPokemonById(id: number): Observable<Pokemon> {
     // Método para obtener un Pokémon por ID

@@ -17,6 +17,7 @@ export class BuscadorComponent implements AfterViewInit, OnInit{
   
   @Output() searchTermChanged = new EventEmitter<string>();
 
+
   ngAfterViewInit() {
     if (this.inputSearch) {
       fromEvent<any>(this.inputSearch.nativeElement, 'keyup')
